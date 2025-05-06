@@ -88,3 +88,55 @@ What's the difference between a class and an id?
   article.product*3
   ```
   This will generate three `article` elements with the class `product`.
+
+# Relational Selectors
+
+you can also select elements based on their relationship to other elements. Here are some common relational selectors:
+
+- `>`: Selects direct children of an element.
+- `+`: Selects the next sibling of an element.
+- `~`: Selects all siblings of an element.
+- `:first-child`: Selects the first child of an element.
+- `:last-child`: Selects the last child of an element.
+- `:nth-child(n)`: Selects the nth child of an element.
+- `:nth-of-type(n)`: Selects the nth child of a specific type within an element.
+- `:not(selector)`: Selects elements that do not match the specified selector.
+- `:hover`: Selects an element when the mouse hovers over it.
+- `:focus`: Selects an element when it is focused (e.g., an input field).
+- `:active`: Selects an element when it is being activated (e.g., a button being clicked).
+- `:checked`: Selects checkboxes or radio buttons that are checked.
+- `:disabled`: Selects disabled form elements.
+- `:enabled`: Selects enabled form elements.
+- `:valid`: Selects valid form elements.
+- `:invalid`: Selects invalid form elements.
+- `:required`: Selects required form elements.
+- `:optional`: Selects optional form elements.
+- `:target`: Selects the target element of a URL fragment (e.g., `#section1`).
+- `:lang(language)`: Selects elements based on their language attribute.
+- `:before`: Inserts content before an element.
+- `:after`: Inserts content after an element.
+- `:first-letter`: Selects the first letter of a block-level element.
+- `:first-line`: Selects the first line of a block-level element.
+- `:placeholder-shown`: Selects input elements that are showing their placeholder text.
+- `:read-only`: Selects elements that are read-only.
+- `:read-write`: Selects elements that are editable.
+- `:empty`: Selects elements that have no children (including text nodes).
+- `:nth-last-child(n)`: Selects the nth child of an element, counting from the last child.
+- `:nth-last-of-type(n)`: Selects the nth child of a specific type within an element, counting from the last child.
+- `:nth-of-type(n)`: Selects the nth child of a specific type within an element.
+- `:nth-last-of-type(n)`: Selects the nth child of a specific type within an element, counting from the last child.
+- `:nth-child(odd)`: Selects odd-numbered children of an element.
+- `:nth-child(even)`: Selects even-numbered children of an element.
+- `:nth-of-type(odd)`: Selects odd-numbered children of a specific type within an element.
+- `:nth-of-type(even)`: Selects even-numbered children of a specific type within an element.
+- `:not(:first-child)`: Selects all children except the first child.
+- `:not(:last-child)`: Selects all children except the last child.
+- `:not(:nth-child(n))`: Selects all children except the nth child.
+- `:not(:nth-of-type(n))`: Selects all children of a specific type except the nth child.
+- `:not(:nth-last-child(n))`: Selects all children except the nth child, counting from the last child.
+
+takeaways
+
+- cleaner markup
+- can be fregile
+- not as fast as basic selectors

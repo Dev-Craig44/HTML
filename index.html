@@ -15,19 +15,18 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- you can create an section element with an id by typing "section#products" -->
+    <!-- say you want to style this paragraph -->
+    <!-- one way to do is, we can start at this section because section already has an id, and then select the <p> inside the section -->
     <section id="products">
-      <!-- we can also select an element by its class -->
-      <!-- you can create an article element with a class by typing "article.product" -->
-      <!-- and alse you can make multiple instances by typing "*3"-->
-      <article class="product"></article>
-      <article class="product"></article>
-      <article class="product"></article>
-
-      <!-- the "target=_blank" attribute opens the link in a new tab -->
-      <a href="https://google.com" target="_blank">Google</a>
-
-      <!-- you can create an article element with an id by typing "article#product" -->
+      <p>Lorem ipsum dolor sit amet.</p>
+      <article>
+        <!-- what if you just want to the first one, which the direct child of the products section  -->
+        <p>Lorem ipsum dolor sit amet.</p>
+      </article>
     </section>
+    <!-- style this paragraph element that is a direct sibling of this section element -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <!-- what if you want to style all elements that come after the section element -->
+    <p>Lorem ipsum dolor sit amet.</p>
   </body>
 </html>
