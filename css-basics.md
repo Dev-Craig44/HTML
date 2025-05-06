@@ -11,3 +11,22 @@ You'll learn about:
 - Gradients
 - Borders
 - Shadows
+
+# Providing CSS
+
+- Embedded stylsheets
+- External stylesheets
+- Inline styles
+
+- if you want to comment out a block of html, you can use the following syntax:
+
+````html
+<!--
+  <div>
+    <h1>Title</h1>
+    <p>Content</p>
+  </div>
+-->
+- if you want to comment out a block of css, you can use the following syntax:
+```css /* body { background-color: #f0f0f0; } */
+````

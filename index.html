@@ -4,29 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Playground</title>
+    <!-- 
+    this is an embedded stylesheet 
+    there are two problems with these stylesheets:
+    1. they are not scalable 
+    2. separation of concerns (HTML | CSS)
+    we use the link tag to link the CSS file 
+    -->
+    <link rel="stylesheet" href="style.css" />
     <style>
-      .highlight {
-        background-color: yellow;
+      /* this is an embedded stylesheet */
+      /* incase you want to override the external stylesheet */
+      /* this is not a good practice */
+      p {
+        color: red;
+      }
+
+      #first {
+        color: green;
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
-    <aside></aside>
-    <footer>
-      <nav>
-        <ul></ul>
-      </nav>
-    </footer>
+    <!-- this is an inline stylesheet -->
+    <!-- incase you want to override the external stylesheet -->
+    <!-- theres a better way to do this -->
+    <!-- you can give it a unique identifier and use that in the CSS file -->
+    <p id="first">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+      dignissimos?
+    </p>
+    <p>Atque omnis molestiae facere, porro incidunt at eum deleniti ullam?</p>
   </body>
-  <footer></footer>
 </html>
