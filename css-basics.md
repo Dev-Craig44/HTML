@@ -30,3 +30,12 @@ You'll learn about:
 - if you want to comment out a block of css, you can use the following syntax:
 ```css /* body { background-color: #f0f0f0; } */
 ````
+
+# Normalizing CSS
+
+- every browser has its own default CSS styles, which can lead to inconsistencies in how web pages are displayed across different browsers.
+- to handle this there's a very popular CSS library called Normalize.css.
+- Normalize.css is a small CSS file that provides better cross-browser consistency in the default styling of HTML elements.
+- http://necolas.github.io/normalize.css
+
+- normalizing our CSS is important step in front-end development, and going forward, we will always use Normalize.css in our projects.
