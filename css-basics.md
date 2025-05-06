@@ -53,9 +53,38 @@ What's the difference between a class and an id?
 
 - A class is a reusable style that can be applied to multiple elements, while an id is a unique identifier that should only be used once per page.
 
- <!-- you can create an section element with an id by typing "section#products" -->
-  <!-- we can also select an element by its class -->
+### Selecting Elements by ID and Class
 
-       <!-- you can create an article element with a class by typing "article.product" -->
-        <!-- and alse you can make multiple instances by typing "*3"-->
-        /* you use "#" to select an id */
+- To create a `section` element with an ID, you can use the following syntax:
+
+  ```html
+  <section id="products"></section>
+  ```
+
+- To select an element by its ID in CSS, use the `#` symbol:
+
+  ```css
+  #products {
+    /* styles here */
+  }
+  ```
+
+- To create an `article` element with a class, use this syntax:
+
+  ```html
+  <article class="product"></article>
+  ```
+
+- To select an element by its class in CSS, use the `.` symbol:
+
+  ```css
+  .product {
+    /* styles here */
+  }
+  ```
+
+- You can also create multiple instances of an element using shorthand syntax in tools like Emmet:
+  ```html
+  article.product*3
+  ```
+  This will generate three `article` elements with the class `product`.
