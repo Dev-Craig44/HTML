@@ -1,7 +1,57 @@
+/* this is what we call a "selector" */
+/* we get select and element by type but we can also select by class or id */
 body {
   margin: 10px;
 }
+/* you use "#" to select an id */
 
-p {
-  color: orange;
+/* #products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+/* to style the product class you must use a dot before the class name */
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: calc(33% - 20px);
+  box-sizing: border-box;
 }
+
+/* lets say we want to select all the elements with the target attribute */
+/* so we're checking for the existence of the target attribute */
+
+/* a[target] {
+  color: blue;
+  text-decoration: underline;
+} */
+
+/* if you want to be specific to the value of the target attribute you can add " ="value" " */
+/* you can even use urls "https://google.com" to select elements, but because this is fragile, one simple change to the url and your css will break */
+/* best practice would be just to look for the word "google" */
+/* prefrence the equal sign with the asterisk, this will select any element that contains the word "google" */
+/* a[href*="google"] {
+  color: blue;
+  text-decoration: underline;
+} */
+
+/* you can also check to see if the attribute starts with a certain value with the "^" */
+/* a[href^="https://"] {
+  color: blue;
+  text-decoration: underline;
+} */
+
+/* you can also check to see if the attribute ends with a certain value with the "$" */
+/* a[href$=".pdf"] {
+  color: blue;
+  text-decoration: underline;
+} */
+
+/* you can also combine multiple conditions */
+/* a[target="_blank"][href*="google"] {
+  color: blue;
+  text-decoration: underline;
+} */

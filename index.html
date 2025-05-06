@@ -13,25 +13,21 @@
     -->
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <style>
-      /* this is an embedded stylesheet */
-      /* incase you want to override the external stylesheet */
-      /* this is not a good practice */
-      p {
-        color: red;
-      }
-
-      #first {
-        color: green;
-        font-weight: bold;
-      }
-    </style>
   </head>
   <body>
-    <!-- this is an inline stylesheet -->
-    <!-- incase you want to override the external stylesheet -->
-    <!-- theres a better way to do this -->
-    <!-- you can give it a unique identifier and use that in the CSS file -->
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <!-- you can create an section element with an id by typing "section#products" -->
+    <section id="products">
+      <!-- we can also select an element by its class -->
+      <!-- you can create an article element with a class by typing "article.product" -->
+      <!-- and alse you can make multiple instances by typing "*3"-->
+      <article class="product"></article>
+      <article class="product"></article>
+      <article class="product"></article>
+
+      <!-- the "target=_blank" attribute opens the link in a new tab -->
+      <a href="https://google.com" target="_blank">Google</a>
+
+      <!-- you can create an article element with an id by typing "article#product" -->
+    </section>
   </body>
 </html>

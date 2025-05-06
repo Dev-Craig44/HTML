@@ -39,3 +39,23 @@ You'll learn about:
 - http://necolas.github.io/normalize.css
 
 - normalizing our CSS is important step in front-end development, and going forward, we will always use Normalize.css in our projects.
+
+# Basic Selectors
+
+- we have a lot of ways to select elements in CSS.
+
+- Type
+- Class
+- ID
+- Attribute
+
+What's the difference between a class and an id?
+
+- A class is a reusable style that can be applied to multiple elements, while an id is a unique identifier that should only be used once per page.
+
+ <!-- you can create an section element with an id by typing "section#products" -->
+  <!-- we can also select an element by its class -->
+
+       <!-- you can create an article element with a class by typing "article.product" -->
+        <!-- and alse you can make multiple instances by typing "*3"-->
+        /* you use "#" to select an id */
