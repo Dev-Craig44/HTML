@@ -2,30 +2,26 @@ body {
   margin: 10px;
 }
 
-p::first-letter {
-  font-size: 140%;
-  font-weight: bold;
-}
+/* to prevent the selector specificty rule from applying to this style we add the "!important" keyword  */
+/* use should avoid this as much as possible, because this will make your css messy and hard to maintain */
 
-p::first-line {
-  font-weight: bold;
-}
-
-/* change the background color of the hightlighted text */
-/* this only applies to this direct element */
-
-/* p::selection {
-  background-color: pink;
+/* h1 {
+  color: dodgerblue !important;
 } */
 
-/* to make it more flexible drop the element */
-::selection {
-  background-color: pink;
+h1 {
+  color: dodgerblue;
 }
 
-/* insert content before the content of this element */
-/* make it a block element */
-p::before {
-  content: "...";
-  display: block;
+.highlight {
+  color: deeppink;
+}
+
+/* this is the selector that is changing the style with a value of 100 on the specificty */
+#products {
+  color: green;
+}
+
+.featured #products {
+  color: dodgerblue;
 }

@@ -236,3 +236,31 @@ p::first-letter {
 
 - **Pseudo-Classes** target the **state** or **position** of an element.
 - **Pseudo-Elements** target **specific parts** of an element's **content**.
+
+## Selector Specificity
+
+When multiple CSS rules target the same element with conflicting styles, the browser determines which rule to apply based on **selector specificity** (or weight). The more specific a selector is, the higher its priority.
+
+### Specificity Hierarchy
+
+If we visualize specificity as a pyramid:
+
+1. **ID Selectors** (`#product`) - Highest specificity, at the top of the pyramid.
+2. **Class & Attribute Selectors** (`.products`, `[type="text"]`) - Medium specificity, in the middle of the pyramid.
+3. **Element Selectors** (`section`, `p`) - Lowest specificity, at the base of the pyramid.
+
+### Understanding Specificity in VS Code
+
+When hovering over an element in VS Code, you can see the specificity of a selector displayed as a set of numbers in parentheses. These numbers represent:
+
+1. **Number of ID selectors**.
+2. **Number of class/attribute selectors**.
+3. **Number of element selectors**.
+
+For example, a specificity of `(1, 2, 0)` means:
+
+- 1 ID selector,
+- 2 class/attribute selectors,
+- 0 element selectors.
+
+By understanding specificity, you can write more predictable and maintainable CSS.
