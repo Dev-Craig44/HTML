@@ -405,19 +405,23 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
 Experiment with these properties to create visually engaging designs.
 
-# Excercises
+# Exercises
 
-1. Create a table as shown below. Use pseudo-class selectors to highlight the odd rows.
+## 1. Create a Table with Highlighted Odd Rows
+
+### Task:
+
+Create a table as shown below and use pseudo-class selectors to highlight the odd rows.
 
 ### Table Structure Breakdown
 
-The following Emmet abbreviation creates a table with a header, body, and footer:
+Use the following Emmet abbreviation to generate the table structure:
 
 ```emmet
 table>(thead>tr>th*3)+(tbody>(tr>td*3)*3)+(tfoot>tr>(th[colspan=2])+th)
 ```
 
-#### Explanation:
+### Explanation:
 
 1. **`table`**: Creates a `<table>` element.
 2. **`>`**: Indicates a direct child relationship.
@@ -443,39 +447,82 @@ table>(thead>tr>th*3)+(tbody>(tr>td*3)*3)+(tfoot>tr>(th[colspan=2])+th)
   - A `<th>` with a `colspan` attribute set to `2`.
   - Another `<th>` as a sibling.
 
-#### Resulting HTML:
+### Resulting HTML:
 
 ```html
 <table>
   <thead>
     <tr>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Row 1, Col 1</td>
+      <td>Row 1, Col 2</td>
+      <td>Row 1, Col 3</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Row 2, Col 1</td>
+      <td>Row 2, Col 2</td>
+      <td>Row 2, Col 3</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>Row 3, Col 1</td>
+      <td>Row 3, Col 2</td>
+      <td>Row 3, Col 3</td>
     </tr>
   </tbody>
   <tfoot>
     <tr>
-      <th colspan="2"></th>
-      <th></th>
+      <th colspan="2">Footer 1</th>
+      <th>Footer 2</th>
     </tr>
   </tfoot>
 </table>
 ```
+
+### Styling:
+
+Use the following CSS to highlight odd rows:
+
+```css
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+```
+
+---
+
+## 2. Create a Styled Box
+
+### Task:
+
+Create a box with the following specifications:
+
+- **Dimensions**: 300px x 300px
+- **Background Color**: Tomato
+- **Shadow**: Light grey
+
+### Example CSS:
+
+```css
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: tomato;
+  box-shadow: 4px 4px 10px lightgrey;
+}
+```
+
+### Example HTML:
+
+```html
+<div class="box"></div>
+```
+
+### Result:
+
+The box should appear as a 300px by 300px square with a tomato background and a light grey shadow.
