@@ -4,19 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Playground</title>
-    <!-- 
-    this is an embedded stylesheet 
-    there are two problems with these stylesheets:
-    1. they are not scalable 
-    2. separation of concerns (HTML | CSS)
-    we use the link tag to link the CSS file 
-    -->
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <article class="featured">
-      <h1 id="products" class="highlight">Heading</h1>
-    </article>
+    <!-- this strong element will inherit styles from the <p> element -->
+    <p>Lorem ipsum <strong>dolor</strong> sit amet.</p>
   </body>
 </html>

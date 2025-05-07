@@ -2,26 +2,15 @@ body {
   margin: 10px;
 }
 
-/* to prevent the selector specificty rule from applying to this style we add the "!important" keyword  */
-/* use should avoid this as much as possible, because this will make your css messy and hard to maintain */
-
-/* h1 {
-  color: dodgerblue !important;
-} */
-
-h1 {
+p {
   color: dodgerblue;
+  border: 1px solid black;
 }
 
-.highlight {
-  color: deeppink;
-}
-
-/* this is the selector that is changing the style with a value of 100 on the specificty */
-#products {
-  color: green;
-}
-
-.featured #products {
-  color: dodgerblue;
+/* the "initial" keyword will ignore parent inheritance */
+/* this strong element does not inherit the border prop from it's parent */
+/* force inheritance on this element by using the "inherit" keyword */
+strong {
+  color: initial;
+  border: inherit;
 }

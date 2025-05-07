@@ -264,3 +264,44 @@ For example, a specificity of `(1, 2, 0)` means:
 - 0 element selectors.
 
 By understanding specificity, you can write more predictable and maintainable CSS.
+
+## Inheritance
+
+In CSS, some properties naturally inherit values from their parent elements, while others do not. Understanding inheritance helps you write cleaner and more efficient styles.
+
+### 🔹 Inheritance and Initial Keywords
+
+- **Inheritance**:
+
+  - Certain properties, like `color` and `font-family`, automatically inherit values from their parent elements.
+  - To reset a property to its default value, use the `initial` keyword.
+
+- **Force Inheritance**:
+  - Use the `inherit` keyword to explicitly inherit a property from the parent, even if it doesn’t naturally inherit.
+
+### Example
+
+```css
+/* Parent styles */
+p {
+  color: dodgerblue;
+  border: 1px solid black;
+}
+
+/* Child element overrides inheritance */
+strong {
+  color: initial; /* Resets to default */
+  border: inherit; /* Explicitly inherits from parent */
+}
+```
+
+**HTML Example:**
+
+```html
+<p>Lorem ipsum <strong>dolor</strong> sit amet.</p>
+```
+
+In this example:
+
+- The `<strong>` element inside the `<p>` tag will inherit the `border` property from the parent.
+- The `color` property of `<strong>` is reset to its default value using `initial`.
