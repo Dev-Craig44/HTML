@@ -404,3 +404,78 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 ```
 
 Experiment with these properties to create visually engaging designs.
+
+# Excercises
+
+1. Create a table as shown below. Use pseudo-class selectors to highlight the odd rows.
+
+### Table Structure Breakdown
+
+The following Emmet abbreviation creates a table with a header, body, and footer:
+
+```emmet
+table>(thead>tr>th*3)+(tbody>(tr>td*3)*3)+(tfoot>tr>(th[colspan=2])+th)
+```
+
+#### Explanation:
+
+1. **`table`**: Creates a `<table>` element.
+2. **`>`**: Indicates a direct child relationship.
+3. **`thead>tr>th*3`**:
+
+- Creates a `<thead>` element.
+- Inside `<thead>`, creates a `<tr>` (table row).
+- Inside `<tr>`, creates 3 `<th>` (table header) elements.
+
+4. **`+`**: Adds a sibling element.
+5. **`tbody>(tr>td*3)*3`**:
+
+- Creates a `<tbody>` element.
+- Inside `<tbody>`, creates 3 `<tr>` (table rows).
+- Inside each `<tr>`, creates 3 `<td>` (table data) elements.
+
+6. **`+`**: Adds another sibling element.
+7. **`tfoot>tr>(th[colspan=2])+th`**:
+
+- Creates a `<tfoot>` element.
+- Inside `<tfoot>`, creates a `<tr>` (table row).
+- Inside `<tr>`, creates:
+  - A `<th>` with a `colspan` attribute set to `2`.
+  - Another `<th>` as a sibling.
+
+#### Resulting HTML:
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan="2"></th>
+      <th></th>
+    </tr>
+  </tfoot>
+</table>
+```
