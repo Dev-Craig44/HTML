@@ -189,3 +189,50 @@ a:focus {
   color: deeppink;
 }
 ```
+
+## Pseudo-Elements
+
+Pseudo-elements are similar to pseudo-classes, but instead of targeting a state of an element, they target a specific part of an element's content. They are created using double colons `::` in modern CSS (though the single colon `:` notation is still widely supported for backward compatibility).
+
+### Common Pseudo-Elements
+
+- `::before` - Inserts content before an element's actual content.
+- `::after` - Inserts content after an element's actual content.
+- `::first-letter` - Styles the first letter of a block-level element.
+- `::first-line` - Styles the first line of a block-level element.
+- `::selection` - Styles the part of an element that the user has highlighted (selected).
+
+### Example Usage
+
+```css
+/* Adds decorative quotes before and after blockquotes */
+blockquote::before {
+  content: "“";
+  font-size: 2rem;
+  color: #ccc;
+}
+
+blockquote::after {
+  content: "”";
+  font-size: 2rem;
+  color: #ccc;
+}
+
+/* Styles the first letter of a paragraph */
+p::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Highlights selected text */
+::selection {
+  background-color: #ffe6e6;
+  color: #333;
+}
+```
+
+### Key Differences
+
+- **Pseudo-Classes** target the **state** or **position** of an element.
+- **Pseudo-Elements** target **specific parts** of an element's **content**.
