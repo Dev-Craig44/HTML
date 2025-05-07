@@ -3,7 +3,24 @@ body {
 }
 
 .box {
-  width: 200px;
+  width: 600px;
   height: 200px;
-  background-color: hsl(53deg, 93%, 51%);
+
+  /* Use "background" or "background-image" for gradients */
+  /* Example: linear-gradient(to right, color1, color2) */
+
+  /* Change direction: "to right", "to bottom right", etc. */
+  /* Example: linear-gradient(to bottom right, color1, color2) */
+
+  /* Use degrees for precise control: "45deg", "173deg", etc. */
+  /* Specify color stops with percentages for finer control */
+  /* Example: linear-gradient(45deg, color1 30%, color2 70%, color3) */
+
+  /* This gradient was generated using cssgradient.io */
+  background: #858718;
+  background: linear-gradient(
+    173deg,
+    rgba(133, 135, 24, 1) 0%,
+    rgba(191, 15, 15, 1) 100%
+  );
 }

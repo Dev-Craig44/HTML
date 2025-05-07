@@ -323,3 +323,32 @@ For both RGB and HSL, you can include an alpha channel to control transparency. 
 - **HSLA**: Adds an alpha value to HSL, e.g., `hsla(0, 100%, 50%, 0.5)` for semi-transparent red.
 
 The alpha value ranges from `0` (completely transparent) to `1` (completely opaque).
+
+# Gradients
+
+Gradients allow us to create smooth transitions between two or more colors, adding depth and visual interest to our designs.
+
+### Types of Gradients
+
+1. **Linear Gradients**:
+
+- By default, the gradient direction is from top to bottom.
+- You can customize the direction (e.g., left to right, diagonal) using angles or keywords.
+
+2. **Radial Gradients**:
+
+- These start from the center and transition outward in a circular or elliptical shape.
+
+### Gradient Tools
+
+Creating gradients manually can be time-consuming. Fortunately, there are online tools like [CSS Gradient](https://cssgradient.io/) that simplify the process by generating the CSS code for you.
+
+### Example
+
+```css
+/* Linear Gradient */
+background: linear-gradient(to right, #ff7e5f, #feb47b);
+
+/* Radial Gradient */
+background: radial-gradient(circle, #ff7e5f, #feb47b);
+```
