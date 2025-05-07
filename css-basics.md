@@ -381,3 +381,26 @@ border-left: 2px double #ccc;
 ### Additional Resources
 
 For creative border ideas and advanced techniques, visit [CSS-Tricks](https://css-tricks.com).
+
+# Shadows
+
+Shadows can enhance the visual appeal of your elements by adding depth and dimension. CSS provides two main properties for applying shadows:
+
+1. **Box Shadows**: Use the `box-shadow` property to add shadows to elements like divs, buttons, or containers.
+2. **Text Shadows**: Use the `text-shadow` property to apply shadows to text, creating a subtle or dramatic effect.
+
+### Example: Box Shadow
+
+```css
+/* Adding a shadow to a box */
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+```
+
+### Example: Text Shadow
+
+```css
+/* Adding a shadow to text */
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+```
+
+Experiment with these properties to create visually engaging designs.

@@ -5,14 +5,21 @@ body {
 .box {
   width: 200px;
   height: 200px;
-  background: dodgerblue;
-  border: 10px dashed royalblue;
-  /* You can be more specific with the rules */
-  /* The order of these lines matters */
+  background: gold;
 
-  /* Example: border-width: 10px 20px 10px 20px; */
-  /* Order: top, right, bottom, left (TRBL) */
+  /* Horizontal and vertical offsets of the shadow */
+  /* Positive horizontal value moves shadow right, negative moves left */
+  /* Positive vertical value moves shadow down, negative moves up */
+  /* Third value (optional) adds blur for a softer shadow */
+  /* Example: box-shadow: 10px 10px 30px grey; */
 
-  /* Border-radius controls the corners */
-  border-radius: 100%;
+  /* For a soft shadow directly below the element, use 0 for horizontal and vertical offsets */
+  box-shadow: 0 0 30px grey;
+}
+
+/* Use rgba for shadows to blend with any background color */
+/* Example: text-shadow: horizontal-offset vertical-offset blur-radius color */
+h1 {
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
