@@ -140,3 +140,52 @@ takeaways
 - cleaner markup
 - can be fregile
 - not as fast as basic selectors
+
+### Pseudo-Class Selectors
+
+Pseudo-class selectors target elements based on their state or position within the DOM. They allow us to apply styles based on user interactions or element relationships without adding additional classes or IDs.
+
+**Key Pseudo-Classes:**
+
+- **Structural Pseudo-Classes:** Target elements based on their position.
+
+  - `:first-of-type` – Targets the first element of a specific type within a parent.
+  - `:last-child` – Targets the last child element within a parent.
+  - `:nth-child()` – Targets elements based on a pattern or index (e.g., odd, even, or a specific number).
+
+- **Interactive Pseudo-Classes:** Target elements based on user interactions.
+
+  - `:link` and `:visited` – Style links based on whether they've been visited.
+  - `:hover` – Applies styles when an element is hovered.
+  - `:focus` – Applies styles when an element is focused (e.g., when tabbed to).
+
+**Example:**
+
+```css
+/* Styling the first paragraph in an article */
+article p:first-of-type {
+  font-size: 140%;
+  font-style: italic;
+}
+
+/* Styling the last child in an article */
+article :last-child {
+  font-weight: bold;
+}
+
+/* Styling every odd list item */
+ul li:nth-child(odd) {
+  color: deeppink;
+}
+
+/* Styling links */
+a:visited,
+a:link {
+  color: dodgerblue;
+}
+
+a:hover,
+a:focus {
+  color: deeppink;
+}
+```

@@ -1,22 +1,42 @@
-/* this is what we call a "selector" */
-/* we get select and element by type but we can also select by class or id */
 body {
   margin: 10px;
 }
 
-/* here we combine two elements */
-/* this is called a descended selector */
-/* to select the direct child of the element you use the ">" */
-/* #products > p {
-  color: red;
+/* if using classes it's a good practice to drop the element selector, so if tomorrow, we change the type of this element to something else, our rules will not break. */
+
+/* .first {
+  font-size: 140%;
+  font-style: italic;
 } */
 
-/* to select the direct sibling of the section you use the "+"
-#products + p {
-  color: red;
+/* style first paragraph using pseudo-class selectors */
+/* - first child selector is fragile. If you move elements around are css rules may break */
+
+/* article :first-child {
+  font-size: 140%;
+  font-style: italic;
 } */
 
-/* to select the all siblings after the section you use the "~" */
-#products ~ p {
-  color: red;
+article p:first-of-type {
+  font-size: 140%;
+  font-style: italic;
+}
+
+article :last-child {
+  font-weight: bold;
+}
+
+ul li:nth-child(odd) {
+  color: deeppink;
+}
+
+a:visited,
+a:link {
+  color: dodgerblue;
+}
+
+/* when somebody uses tab to get to the link the hover color wont change so it's best practice to use the focus pseudo selector. */
+a:hover,
+a:focus {
+  color: deeppink;
 }
