@@ -305,3 +305,21 @@ In this example:
 
 - The `<strong>` element inside the `<p>` tag will inherit the `border` property from the parent.
 - The `color` property of `<strong>` is reset to its default value using `initial`.
+
+## Colors
+
+CSS provides various ways to define colors for your elements:
+
+1. **Named Colors**: Predefined color names like `red`, `blue`, `green`, etc.
+2. **RGB**: Specify colors using the Red-Green-Blue format, e.g., `rgb(255, 0, 0)` for red.
+3. **HSL**: Define colors using Hue-Saturation-Lightness, e.g., `hsl(0, 100%, 50%)` for red.
+4. **Hexadecimal**: Use hex codes like `#FF0000` for red.
+
+### Adding Transparency
+
+For both RGB and HSL, you can include an alpha channel to control transparency. This is done using `rgba` and `hsla` formats:
+
+- **RGBA**: Adds an alpha value to RGB, e.g., `rgba(255, 0, 0, 0.5)` for semi-transparent red.
+- **HSLA**: Adds an alpha value to HSL, e.g., `hsla(0, 100%, 50%, 0.5)` for semi-transparent red.
+
+The alpha value ranges from `0` (completely transparent) to `1` (completely opaque).

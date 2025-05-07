@@ -2,15 +2,8 @@ body {
   margin: 10px;
 }
 
-p {
-  color: dodgerblue;
-  border: 1px solid black;
-}
-
-/* the "initial" keyword will ignore parent inheritance */
-/* this strong element does not inherit the border prop from it's parent */
-/* force inheritance on this element by using the "inherit" keyword */
-strong {
-  color: initial;
-  border: inherit;
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: hsl(53deg, 93%, 51%);
 }
