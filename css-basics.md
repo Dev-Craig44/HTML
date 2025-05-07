@@ -352,3 +352,32 @@ background: linear-gradient(to right, #ff7e5f, #feb47b);
 /* Radial Gradient */
 background: radial-gradient(circle, #ff7e5f, #feb47b);
 ```
+
+# Borders
+
+The `border` property in CSS allows you to define the appearance of an element's border. It accepts three values:
+
+1. **Thickness**: Specifies the width of the border (e.g., `1px`, `0.5em`).
+2. **Style**: Defines the border style (e.g., `solid`, `dashed`, `dotted`).
+3. **Color**: Sets the color of the border (e.g., `#000`, `red`).
+
+### Border Sides
+
+Remember the order of sides when specifying borders: **top, right, bottom, left**. This is often abbreviated as **TRBL** (pronounced "trouble").
+
+### Example
+
+```css
+/* Single border */
+border: 2px solid #000;
+
+/* Individual sides */
+border-top: 2px solid #000;
+border-right: 2px dashed #555;
+border-bottom: 2px dotted #888;
+border-left: 2px double #ccc;
+```
+
+### Additional Resources
+
+For creative border ideas and advanced techniques, visit [CSS-Tricks](https://css-tricks.com).
